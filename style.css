@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 1200px;
+
+}
+.panel{
+    border: 2px solid red;
+    margin: 5px;
+    border-radius: 30px;
+    height: 80vh;
+    flex: 0.35;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.panel h3{
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    opacity: 0;
+}
+.active{
+    flex: 5;
+    border-radius: 40px;
+    transition: border-radius 1s ease-in;
+    transition: flex 1s;
+}
+.active h3{
+    opacity: 1;
+    transition: opacity 1s;
+    text-align: center;
+    font-size: x-large;
+}
